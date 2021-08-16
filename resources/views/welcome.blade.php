@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>My E-Commerce</title>
+	<title>Michael's E-Commerce</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,35 +14,35 @@
 <body>
     @guest
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="/">Michael's E-Commerce</a>
+		<a class="navbar-brand" href="/" style="color: white; text-shadow: 2px 2px black">Michael's E-Commerce</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
 				<li class="nav-item">
-					<a class="nav-link underline" href="">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-link underline" href="/" style="color: white; text-shadow: 2px 2px black">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link underline" href="">About Us</a>
+					<a class="nav-link underline" href="/shop" style="color: white; text-shadow: 2px 2px black">Our Product</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link underline" href="">Our Product</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link button" href="/login">Sign In</a>
+					<a class="nav-link button" href="/login" style="color: white">Sign In</a>
                 </li>
 			</ul>
 		</div>
     </nav>
     @else
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/">Michael's E-Commerce</a>
+            <a class="navbar-brand" href="/" style="color: white; text-shadow: 2px 2px black">Michael's E-Commerce</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+					<li class="nav-item">
+						<a class="nav-link underline" href="/shop" style="color: white; text-shadow: 2px 2px black">Our Product</a>
+					</li>
                     <li class="nav-item">
                         <a class="nav-link underline" href="/cart"><i class="fa fa-shopping-cart"></i> Cart</a>
                     </li>
@@ -67,19 +67,22 @@
         </nav>
         @endguest
 	<div class="content">
-		<h1 class="title">E - Commerce</h1>
-		<h3>The Best Place for Any Solutions</h3>
+		<h1 class="title">Michael's E - Commerce</h1>
+		<h2>Absolutely. Positively. Perfect.</h2>
 	</div>
+	<div style="background-color: black; height: 1cm;"></div>
+	<div class="featuredbg">
 	<div class="container">
 		<div class="products">
 			<h1 id="featured">Featured Products</h1>
+			<hr>
 			<div class="row list-product">
                	@foreach ($products as $product)
-			   	<div class="col-lg-4 col-md-6">
-					<a href="">
+			   	<div class="col-lg-4 col-md-6 mt-5 mb-5">
+					<a href="/shop/detail/{{$product->id}}">
 					<img src="{{asset($product->image)}}" alt="nopic" height="150" width="150">
 					</a>
-					<p class="product-name"><a href="#">{{$product->name}}</a></p>
+					<p class="product-name"><a href="/shop/detail/{{$product->id}}">{{$product->name}}</a></p>
 					<p class="product-price">IDR {{number_format($product->price)}}</p>
 				</div>
 			   @endforeach
@@ -87,22 +90,20 @@
 		</div>
 		<a href="/shop" class="more">View More Products ></a>
 	</div>
-
+	</div>
 	<footer class="footer-distributed">
 		<div class="footer-right">
 			<a href="#"><i class="fa fa-facebook"></i></a>
 			<a href="#"><i class="fa fa-twitter"></i></a>
-			<a href="#"><i class="fa fa-linkedin"></i></a>
+			<a href="https://www.linkedin.com/in/michael-jonathan-halim-a33348142/" target=”_blank”><i class="fa fa-linkedin"></i></a>
 			<a href="#"><i class="fa fa-gitlab"></i></a>
 		</div>
 		<div class="footer-left">
 			<p class="footer-links">
-				<a class="link-1" href="#">HOME</a>
-				<a href="#">SHOP</a>
-				<a href="#">ABOUT</a>
-				<a href="#">FAQ</a>
+				<a class="link-1" href="/">HOME</a>
+				<a href="/shop">SHOP</a>
 			</p>
-			<p>CodingStudio &copy; 2018</p>
+			<p>Michael Jonathan &copy; 2021</p>
 		</div>
 
     </footer>

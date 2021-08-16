@@ -15,16 +15,16 @@ class CategorySeeder extends Seeder
             'name' => 'Baju'
         ]);
         DB::table('categories')->insert([
-            'name' => 'Celana'
+            'name' => 'Mainan'
         ]);
         DB::table('categories')->insert([
-            'name' => 'Duster'
+            'name' => 'Elektronik'
         ]);
         DB::table('categories')->insert([
-            'name' => 'Jeans'
+            'name' => 'Buku'
         ]);
         DB::table('categories')->insert([
-            'name' => 'Hoodie'
+            'name' => 'Kesehatan'
         ]);
     }
 }

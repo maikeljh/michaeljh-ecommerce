@@ -15,41 +15,42 @@ body {
     padding-bottom: 15px;
 }
 
-.bg-dark {
-    background-color: transparent !important;
-}
 
 .bg-dark.scrolled {
-    background-color: #252525 !important;
+    background-color: rgba(25, 25, 25, 0.1) !important;
     transition: background-color 200ms linear;
 }
 
 .navbar-brand {
-    font-family: "Helvetica", "sans-serif";
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-weight: bold;
     font-style: italic;
+    font-size: 22px;
     margin-left: 15px;
 }
 
 .navbar-nav {
-    margin-right: 1.5em;
+    margin-right: 0.5em;
 }
 
 .nav-item {
-    margin-right: 2em;
+    margin-right: 1em;
 }
+
 
 .navbar-dark .navbar-nav .nav-link {
     color: white;
+    text-shadow: 2px 2px black;
     font-family: "Montserrat", sans-serif;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
     color: white;
+    text-shadow: 2px 2px black;
 }
 
 .button {
-    background: #ff4f77;
+    background: #DC143C;
     text-align: center;
     border-radius: 10px;
     width: 5em;
@@ -60,7 +61,7 @@ body {
     font-family: "Montserrat", sans-serif;
     background: #ff4f77;
     text-decoration: none;
-    color: white;
+    color: black;
     text-align: center;
     border-radius: 10px;
     padding: 10px;
@@ -104,8 +105,11 @@ body {
 
 .content {
     min-height: 100vh;
-    background-image: url("../storage/images/2-1.jpeg");
+    background-image: url("../storage/images/shopping.jpg");
     background-size: cover;
+    font-weight: bold;
+    text-shadow: 3px 3px black;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,8 +123,15 @@ body {
     font-size: 5em;
     font-weight: bold;
 }
-
+hr {
+    border: 1px solid black;
+    background: black;
+}
+.featuredbg {
+    background-image: url('https://storage.pixteller.com/designs/designs-images/2019-03-27/05/simple-background-backgrounds-passion-simple-1-5c9b95bd34713.png');
+}
 .container {
+    width: 100%;
     padding-bottom: 20px;
 }
 
@@ -165,13 +176,13 @@ body {
 }
 
 .more:hover {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 
 .footer-distributed {
-    background-color: #dfdfdf;
+    background-color: #343a40;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
@@ -182,7 +193,7 @@ body {
 }
 
 .footer-distributed .footer-left p {
-    color: #8f9296;
+    color: white;
     font-size: 14px;
     margin: 0;
 }
@@ -194,7 +205,7 @@ body {
     margin: 0 0 10px;
     padding: 0;
     transition: ease 0.25s;
-    color: black;
+    color: white;
 }
 
 .footer-distributed p.footer-links a {
@@ -209,7 +220,7 @@ body {
     content: "·";
     font-size: 20px;
     left: 0;
-    color: black;
+    color: white;
     display: inline-block;
     padding-right: 5px;
 }

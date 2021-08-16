@@ -89,25 +89,33 @@ body {
 }
 
 .wrapper {
+  margin-top: 100px;
   height: 50vh;
-  display: flex;
+  float: left;
   align-items: center !important;
 }
 
 hr {
-  margin: 0;
+  margin-left: 250px;
   border: 1px solid #ff4f77;
   background: #ff4f77;
 }
+.harga {
 
+}
 .title {
+  margin-left: 20px;
   font-family: "Montserrat", sans-serif;
   margin-top: 100px;
 }
-
+.title, .wrapper{
+  display: inline-block;
+}
 .desc {
+  margin-left: 20px;
   font-family: "Montserrat", sans-serif;
-  margin-top: 20px;
+  margin-top: 5px;
+  margin-right: 50px;
 }
 
 #description {
@@ -119,6 +127,7 @@ p {
 }
 
 .kartu {
+  margin-left: 5px;
   margin-top: 30px;
   border: 0.5px solid grey;
   padding: 10px;

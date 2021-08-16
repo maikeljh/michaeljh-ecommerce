@@ -86,18 +86,28 @@ body {
     color: white;
     font-family: "Montserrat", sans-serif;
 }
-
 .container{
     font-family: 'Montserrat';
-    margin-top: 6em;
+    margin-top: 1em;
+}
+
+.userprofile{
+    text-align: center;
 }
 
 .img-profile{
-    width: 100%;
+    width: 23%;
+    text-align: center;
 }
 
+.userdata {
+    text-align: center;
+ }
+ 
 .content{
-    width: 60%;
+    margin: auto;
+    text-align: center;
+    width: 30%;
     border: 2px solid grey;
     padding: 20px;
     border-radius: 20px;
@@ -114,5 +124,85 @@ body {
     background: #ff4f77;
     color: white;
 }
+.footer-distributed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #343a40;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font: normal 16px;
+    padding: 45px 50px;
+    margin-top: 57px;
+  }
+  
+  .footer-distributed .footer-left p {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+  }
+  /* Footer links */
+  
+  .footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease 0.25s;
+    color: white;
+  }
+  
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease 0.25s;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: white;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  .footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+  }
+  
+  .footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition: all 0.25s;
+  }
+  
+  .footer-distributed .footer-right a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+  
+  .footer-distributed p.footer-links a:hover {
+    text-decoration: underline;
+  }
 
 
