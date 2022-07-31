@@ -80,12 +80,14 @@
 <div class="totalz">
     <h4 class="total-price">Total Price: IDR {{number_format($total)}}</h4>
 </div>
+<div style="text-align: center;font-size:20px;padding:2rem;">Setelah checkout, silahkan tunggu email dari kami untuk pembayaran dan pengiriman</div>
 </div>
 
 <form action="/checkout" method="POST" style="margin-left: 700px;">
     @csrf
 <button type="submit" class="btn btn-primary">Checkout</button>
 </form>
+
 <footer class="footer-distributed">
     <div class="footer-right">
         <a href="#"><i class="fa fa-facebook"></i></a>

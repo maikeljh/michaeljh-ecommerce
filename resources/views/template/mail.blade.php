@@ -11,7 +11,7 @@
         $total = 0;
     @endphp
     <div class="container">
-        <h1>Terima kasih sudah melakukan pemesanan:</h1>
+        <h1>Pesanan Baru untuk {{$carts->first()->user->email}}:</h1>
         <table class="table">
             <thead>
                 <th>#</th>

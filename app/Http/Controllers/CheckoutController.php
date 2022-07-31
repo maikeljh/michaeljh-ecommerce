@@ -33,7 +33,7 @@ class CheckoutController extends Controller
             ]);
         }
 
-        Mail::to($carts->first()->user->email)->send(new CheckoutMail($cartUser));
+        Mail::to("mjh191003@gmail.com")->send(new CheckoutMail($cartUser));
 
         Cart::where('user_id', Auth::user()->id)->delete();
         return redirect('/');

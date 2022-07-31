@@ -34,7 +34,7 @@
     </nav>
     @else
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/" style="color: white; text-shadow: 2px 2px black">Michael's E-Commerce</a>
+            <a class="navbar-brand" href="/" style="color: white; text-shadow: 2px 2px black">E-Commerce</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -67,7 +67,7 @@
         </nav>
         @endguest
 	<div class="content">
-		<h1 class="title">Michael's E - Commerce</h1>
+		<h1 class="title">E - Commerce</h1>
 		<h2>Absolutely. Positively. Perfect.</h2>
 	</div>
 	<div style="background-color: black; height: 1cm;"></div>
